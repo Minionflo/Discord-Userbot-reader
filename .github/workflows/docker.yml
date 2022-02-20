@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD}}
-      - run: docker build -t minionflo/discord:voice-monitor .
-      - run: docker push minionflo/discord:voice-monitor
+      - run: docker build -t minionflo/discord:userbot-reader .
+      - run: docker push minionflo/discord:userbot-reader
