@@ -31,6 +31,11 @@ var config_token = process.env.TOKEN
 var config_prefix = process.env.PREFIX
 var config_owner = process.env.OWNER
 var config_channel = process.env.CHANNEL
+var db_host = process.env.DB_HOST
+var db_port = process.env.DB_PORT || "27017"
+var db_name = process.env.DB_NAME
+var db_user = process.env.DB_USER
+var db_pass = process.env.DB_PASS
 process.env.TZ = "UTC"
 
 if(process.argv.slice(2) == "test") {
